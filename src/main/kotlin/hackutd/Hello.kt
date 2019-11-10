@@ -9,7 +9,7 @@ import org.jetbrains.exposed.sql.Table
 
 fun main(args: Array<String>) {
     val db = Database.connect("jdbc:h2:mem:test", driver = "org.h2.Driver")
-    startBot("NjQyOTA1ODMxMzEwMDk4NDM4.XcdyeA.cKgLXYq68QJKxKGTEGc_TlZx-ZY") {
+    startBot("NjQyOTA1ODMxMzEwMDk4NDM4.XceMgg.ngb8G2rZqp-5_tuzSsunxUHHdg0") {
         configure {
             prefix = "!"
             globalPath = "hackutd"
