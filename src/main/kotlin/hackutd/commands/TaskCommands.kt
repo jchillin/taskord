@@ -1,7 +1,10 @@
 package hackutd.commands
 
+import hackutd.setTaskMessage
 import me.aberrantfox.kjdautils.api.dsl.CommandSet
 import me.aberrantfox.kjdautils.api.dsl.commands
+
+var count = 0
 
 @CommandSet("Task")
 fun taskCommands() = commands {
@@ -9,6 +12,14 @@ fun taskCommands() = commands {
         description = "Responds with pong!"
         execute {
             it.respond("pong!")
+        }
+
+    }
+
+    command("Increment") {
+        execute {
+            setTaskMessage("Count: ${count}",it.guild!!)
+            count++
         }
     }
 }
