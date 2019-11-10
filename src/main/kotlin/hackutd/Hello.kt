@@ -5,7 +5,7 @@ import me.aberrantfox.kjdautils.api.startBot
 
 
 fun main(args: Array<String>) {
-    startBot("your-bot-token-goes-here") {
+    startBot("NjQyOTA1ODMxMzEwMDk4NDM4.XcdyeA.cKgLXYq68QJKxKGTEGc_TlZx-ZY") {
         configure {
             prefix = "!"
             globalPath = "hackutd"
